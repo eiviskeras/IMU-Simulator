@@ -101,14 +101,11 @@ jobs:
             echo ".doxygen directory not found in main branch!"
           fi
 
-      - name: List structure
-        run: ls -alh src/imu_simulator_package/docs
-
       - name: Deploy Documentation to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: src/imu_simulator_package/docs/
+          publish_dir: src/imu_simulator_package/docs/html
           publish_branch: gh-pages
 
       - name: Upload Doxygen Artifacts
