@@ -102,9 +102,7 @@ jobs:
           fi
 
       - name: List structure
-        run: |
-          cd src/imu_simulator_package/docs/
-          ls -alh
+        run: ls -alh src/imu_simulator_package
 
       - name: Deploy Documentation to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
