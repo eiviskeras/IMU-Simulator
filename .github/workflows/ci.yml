@@ -85,6 +85,9 @@ jobs:
           ament_cppcheck src
         continue-on-error: true
 
+      - name: Create directory to store Doxygen Documentation
+        run: mkdir -p ./doxygen/docs
+
       - name: Generate Doxygen Documentation
         run: |
           # List contents to confirm we're in the right place
