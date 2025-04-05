@@ -105,7 +105,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: src/imu_simulator_package/docs/html
+          publish_dir: src/imu_simulator_package/docs/
           publish_branch: gh-pages
 
       - name: Upload Doxygen Artifacts
