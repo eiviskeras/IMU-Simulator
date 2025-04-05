@@ -14,7 +14,7 @@
 
 PROJECT_NAME      = cmake_package
 PROJECT_LOGO      = 
-OUTPUT_DIRECTORY  = .doxygen/docs
+OUTPUT_DIRECTORY  = docs
 HTML_HEADER       = 
 HTML_FOOTER       = 
 QUIET             = NO
@@ -33,9 +33,8 @@ HTML_COLORSTYLE_SAT = 255
 ENABLED_SECTIONS  = 
 ENABLE_PREPROCESSING = YES
 CASE_SENSE_NAMES  = NO
-IMAGE_PATH        = img \
-		    .doxygen/img
-INPUT             = src include/imu_simulator_package/
+IMAGE_PATH        = img
+INPUT             = ../src ../include/imu_simulator_package/
 INPUT_ENCODING = UTF-8
 FILE_PATTERNS          = *.c \
                          *.cc \
