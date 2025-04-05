@@ -89,7 +89,7 @@ jobs:
         run: |
           # List contents to confirm we're in the right place
           ls -alh
-          if [ -d src ]; then
+          if [ -d .doxygen ]; then
             cd src
             if [ -f Doxyfile ]; then
               doxygen Doxyfile
@@ -97,7 +97,7 @@ jobs:
               echo "Doxyfile not found!"
             fi
           else
-            echo "imu_simulator_package directory not found!"
+            echo ".doxygen directory not found in main branch!"
           fi
 
       - name: Deploy Documentation to GitHub Pages
