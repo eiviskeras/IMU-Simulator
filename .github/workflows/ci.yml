@@ -88,6 +88,7 @@ jobs:
       - name: Generate Doxygen Documentation
         run: |
           # List contents to confirm we're in the right place
+          pwd
           ls -alh
           if [ -d .doxygen ]; then
             cd .doxygen
