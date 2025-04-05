@@ -90,7 +90,7 @@ jobs:
           # List contents to confirm we're in the right place
           ls -alh
           if [ -d .doxygen ]; then
-            cd src
+            cd .doxygen
             if [ -f Doxyfile ]; then
               doxygen Doxyfile
             else
