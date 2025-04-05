@@ -14,7 +14,7 @@
 
 PROJECT_NAME      = cmake_package
 PROJECT_LOGO      = 
-OUTPUT_DIRECTORY  = docs
+OUTPUT_DIRECTORY  = ../src/imu_simulator_package/docs/
 HTML_HEADER       = 
 HTML_FOOTER       = 
 QUIET             = NO
