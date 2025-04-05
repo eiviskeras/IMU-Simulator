@@ -1,0 +1,664 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classimu__simulator_1_1_imu_simulator_node" kind="class" language="C++" prot="public">
+    <compoundname>imu_simulator::ImuSimulatorNode</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">rclcpp::Node</basecompoundref>
+    <includes refid="imu__simulator__node_8h" local="no">imu_simulator_node.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a0415bf6086ba090f037b22cfdd09d747" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classimu__simulator_1_1_imu_simulator" kindref="compound">ImuSimulator</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ImuSimulator&gt; imu_simulator::ImuSimulatorNode::pImuSimulator_</definition>
+        <argsstring></argsstring>
+        <name>pImuSimulator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="29" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a06fef78ffd359e32820ddeeb19e74e8e" prot="private" static="no" mutable="no">
+        <type>nav_msgs::msg::Odometry::SharedPtr</type>
+        <definition>nav_msgs::msg::Odometry::SharedPtr imu_simulator::ImuSimulatorNode::groundTruthOdomMsg_</definition>
+        <argsstring></argsstring>
+        <name>groundTruthOdomMsg_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="32" column="38" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a9614613392ca000e2af9d1602644c475" prot="private" static="no" mutable="no">
+        <type>geometry_msgs::msg::AccelStamped::SharedPtr</type>
+        <definition>geometry_msgs::msg::AccelStamped::SharedPtr imu_simulator::ImuSimulatorNode::groundTruthAccelMsg_</definition>
+        <argsstring></argsstring>
+        <name>groundTruthAccelMsg_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="35" column="47" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a0d524a35a1a3d2bdd77d7fa35a3fb27b" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time imu_simulator::ImuSimulatorNode::lastOdomTimestamp_</definition>
+        <argsstring></argsstring>
+        <name>lastOdomTimestamp_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="38" column="16" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1ac4493a8fe2a5e11a638d92a48d94ddb3" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time imu_simulator::ImuSimulatorNode::lastAccelTimestamp_</definition>
+        <argsstring></argsstring>
+        <name>lastAccelTimestamp_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="41" column="16" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a7e53ea908a26730aa7dba38f7bf0756e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; sensor_msgs::msg::Imu &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;sensor_msgs::msg::Imu&gt;::SharedPtr imu_simulator::ImuSimulatorNode::pImuPublisher_</definition>
+        <argsstring></argsstring>
+        <name>pImuPublisher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="44" column="33" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a0990b9a07b1e9c9f10693709f0e762a2" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::AccelStamped &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::AccelStamped&gt;::SharedPtr imu_simulator::ImuSimulatorNode::pImuAccelStampedPublisher_</definition>
+        <argsstring></argsstring>
+        <name>pImuAccelStampedPublisher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="48" column="7" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1ae9c6a907186fcf246415f31dd62f541e" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; diagnostic_msgs::msg::DiagnosticArray &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;diagnostic_msgs::msg::DiagnosticArray&gt;::SharedPtr imu_simulator::ImuSimulatorNode::pDiagnosticPublisher_</definition>
+        <argsstring></argsstring>
+        <name>pDiagnosticPublisher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="52" column="7" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a8fdeb972434d8f539e1edfece96cd797" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::Vector3 &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::Vector3&gt;::SharedPtr imu_simulator::ImuSimulatorNode::pTrueAccelerationPublisher_</definition>
+        <argsstring></argsstring>
+        <name>pTrueAccelerationPublisher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="56" column="7" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1ad4632a6e2a8fd04955a2eba41d902627" prot="private" static="no" mutable="no">
+        <type>rclcpp::Publisher&lt; geometry_msgs::msg::Vector3 &gt;::SharedPtr</type>
+        <definition>rclcpp::Publisher&lt;geometry_msgs::msg::Vector3&gt;::SharedPtr imu_simulator::ImuSimulatorNode::pTrueAngularRatePublisher_</definition>
+        <argsstring></argsstring>
+        <name>pTrueAngularRatePublisher_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="60" column="7" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1aa9476b0c3966c4fa5bb239ea8aca1cee" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; nav_msgs::msg::Odometry &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;nav_msgs::msg::Odometry&gt;::SharedPtr imu_simulator::ImuSimulatorNode::pOdometrySubscriber_</definition>
+        <argsstring></argsstring>
+        <name>pOdometrySubscriber_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="63" column="36" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a6a52cab4703ce12f49888cca87d77193" prot="private" static="no" mutable="no">
+        <type>rclcpp::Subscription&lt; geometry_msgs::msg::AccelStamped &gt;::SharedPtr</type>
+        <definition>rclcpp::Subscription&lt;geometry_msgs::msg::AccelStamped&gt;::SharedPtr imu_simulator::ImuSimulatorNode::pAccelerationSubscriber_</definition>
+        <argsstring></argsstring>
+        <name>pAccelerationSubscriber_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="67" column="7" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a1ca92098dd4bf56c747f5f99e4af18ed" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; tf2_ros::StaticTransformBroadcaster &gt;</type>
+        <definition>std::shared_ptr&lt;tf2_ros::StaticTransformBroadcaster&gt; imu_simulator::ImuSimulatorNode::pStaticTf2Broadcaster_</definition>
+        <argsstring></argsstring>
+        <name>pStaticTf2Broadcaster_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="70" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1ac52a0419d86b67692c5a29c7cd7dcec1" prot="private" static="no" mutable="no">
+        <type>diagnostic_msgs::msg::DiagnosticStatus</type>
+        <definition>diagnostic_msgs::msg::DiagnosticStatus imu_simulator::ImuSimulatorNode::diagnosticMsg_</definition>
+        <argsstring></argsstring>
+        <name>diagnosticMsg_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="73" column="42" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a08a74b22a47263769edc6ba691a79a9d" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr imu_simulator::ImuSimulatorNode::pTimer_</definition>
+        <argsstring></argsstring>
+        <name>pTimer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="76" column="32" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1aebad1a55e0d4c2fce7b4ce5a2fb48961" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr imu_simulator::ImuSimulatorNode::pOdometryTimeOutTimer_</definition>
+        <argsstring></argsstring>
+        <name>pOdometryTimeOutTimer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="77" column="32" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1ae755a76cfefdaf16574305166a8ab8d8" prot="private" static="no" mutable="no">
+        <type>rclcpp::TimerBase::SharedPtr</type>
+        <definition>rclcpp::TimerBase::SharedPtr imu_simulator::ImuSimulatorNode::pAccelerationTimeOutTimer_</definition>
+        <argsstring></argsstring>
+        <name>pAccelerationTimeOutTimer_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="78" column="32" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1aa48fb3047bed97f3a9a6ceccf38fe6d1" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double imu_simulator::ImuSimulatorNode::sampleTime_</definition>
+        <argsstring></argsstring>
+        <name>sampleTime_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="81" column="10" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1aeebd3566678208f4e89725d788b27bfe" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulatorNode::first_odometry_received_</definition>
+        <argsstring></argsstring>
+        <name>first_odometry_received_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="84" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1ae237b4b8c2d3f0f6fb3bd2be2fbcbf8c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulatorNode::odometry_timeout_</definition>
+        <argsstring></argsstring>
+        <name>odometry_timeout_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="85" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a17f6f0db3199a7d9571ba1b2ae1a71fa" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulatorNode::first_acceleration_received_</definition>
+        <argsstring></argsstring>
+        <name>first_acceleration_received_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="88" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1a80869e26420ee1bdb7f387c047b18a7b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulatorNode::acceleration_timeout_</definition>
+        <argsstring></argsstring>
+        <name>acceleration_timeout_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="89" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1aa294a68218f72654ff6b6a97897c80d2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulatorNode::calc_acc_from_odom_vel_</definition>
+        <argsstring></argsstring>
+        <name>calc_acc_from_odom_vel_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="93" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1aac6bf27be73dabb8a7d6d85495c6fcdf" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulatorNode::v_ib_b_prev_</definition>
+        <argsstring></argsstring>
+        <name>v_ib_b_prev_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="96" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1af9d3a7c747a08cd265307f8ddd22933d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulatorNode::firstLinearVelocityReceived_</definition>
+        <argsstring></argsstring>
+        <name>firstLinearVelocityReceived_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="99" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_node_1af9dd9ba58784bef1f2d3ce906f302dd0" prot="private" static="no" mutable="no">
+        <type>rclcpp::Time</type>
+        <definition>rclcpp::Time imu_simulator::ImuSimulatorNode::timeLastOdom_</definition>
+        <argsstring></argsstring>
+        <name>timeLastOdom_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="102" column="16" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a32a4f2cc73ab193ec747d2eeb0367b57" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imu_simulator::ImuSimulatorNode::ImuSimulatorNode</definition>
+        <argsstring>(std::shared_ptr&lt; ImuSimulator &gt; pImuSimulator)</argsstring>
+        <name>ImuSimulatorNode</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="classimu__simulator_1_1_imu_simulator" kindref="compound">ImuSimulator</ref> &gt;</type>
+          <declname>pImuSimulator</declname>
+        </param>
+        <briefdescription>
+<para>IMU simulator node constructor with default config file path. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pImuSimulator</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the IMU simulator object </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="22" column="12" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="21" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a0be5f35c1c3b93ea9afc655c5f9a7ca2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>imu_simulator::ImuSimulatorNode::~ImuSimulatorNode</definition>
+        <argsstring>()</argsstring>
+        <name>~ImuSimulatorNode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="25" column="3" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="25" bodyend="25"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a0d93e0064aee1d71c6ce9eab2f87c97e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::declareAndRetrieveGeneralSettings</definition>
+        <argsstring>()</argsstring>
+        <name>declareAndRetrieveGeneralSettings</name>
+        <briefdescription>
+<para>Declare and retrieve general settings from the parameter server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="105" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="192" bodyend="237"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a670dc668d43d3bdaed605e564c2564a2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::declareAndRetrieveImuParameters</definition>
+        <argsstring>()</argsstring>
+        <name>declareAndRetrieveImuParameters</name>
+        <briefdescription>
+<para>Declare and retrieve IMU model parameters from the parameter server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="106" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="242" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a21c7c9b909c3c958c135dfe77ccddddb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::declareAndRetrieveEnableSettings</definition>
+        <argsstring>()</argsstring>
+        <name>declareAndRetrieveEnableSettings</name>
+        <briefdescription>
+<para>Declare and retrieve IMU model enable settings from the parameter server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="107" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="447" bodyend="596"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a6bedd342dd8d329f4cc5a8a66c6b6f7c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::declareAndRetrieveEnvironmentalSettings</definition>
+        <argsstring>()</argsstring>
+        <name>declareAndRetrieveEnvironmentalSettings</name>
+        <briefdescription>
+<para>Declare and retrieve environmental settings from the parameter server. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="108" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="601" bodyend="633"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a862feb7cf0f05d44502ec861ddfa561b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::imuSimulatorLoopCallback</definition>
+        <argsstring>()</argsstring>
+        <name>imuSimulatorLoopCallback</name>
+        <briefdescription>
+<para>IMU simulator loop callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called periodically by the timer and publishes the IMU and diagnostic messages. The IMU simulator is updated with ground truth data and the simulated IMU data is published. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="111" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="642" bodyend="888"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a2b0a798fe84724d12e7f40aec8a503f8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::odometryCallback</definition>
+        <argsstring>(const nav_msgs::msg::Odometry::SharedPtr msg)</argsstring>
+        <name>odometryCallback</name>
+        <param>
+          <type>const nav_msgs::msg::Odometry::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Odometry callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called when a new odometry message is received. The ground truth odometry message is assigned to the ground truth odometry message member variable of the node class.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the odometry message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="114" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="899" bodyend="940"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a8b5255947a694665a27d6f3d48ab6797" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::odometryTimeOutCallback</definition>
+        <argsstring>()</argsstring>
+        <name>odometryTimeOutCallback</name>
+        <briefdescription>
+<para>Odometry timeout callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called when no ground truth odometry message is received. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="115" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="1001" bodyend="1008"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1ab7172f65be91c628ec5152901826b0bb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::accelerationCallback</definition>
+        <argsstring>(const geometry_msgs::msg::AccelStamped::SharedPtr msg)</argsstring>
+        <name>accelerationCallback</name>
+        <param>
+          <type>const geometry_msgs::msg::AccelStamped::SharedPtr</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+<para>Acceleration callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called when a new acceleration message is received. The ground truth acceleration message is assigned to the ground truth acceleration message member variable of the node class.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>msg</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the acceleration message </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="118" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="951" bodyend="993"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1aefc41e434a8c0d9e85b5e5bd049ed13b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::accelerationTimeOutCallback</definition>
+        <argsstring>()</argsstring>
+        <name>accelerationTimeOutCallback</name>
+        <briefdescription>
+<para>Acceleration timeout callback function. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is called when no ground truth acceleration message is received. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="120" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="1016" bodyend="1023"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1aae24354e9e00f9d5ce8ef79133624e64" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulatorNode::publishTf2Transforms</definition>
+        <argsstring>() const</argsstring>
+        <name>publishTf2Transforms</name>
+        <briefdescription>
+<para>Publish static tf2 transformations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="123" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="1028" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_node_1a372d9149e913ff903549611660246f7f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::VectorXd</type>
+        <definition>Eigen::VectorXd imu_simulator::ImuSimulatorNode::doubleVectorToEigenVector</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;vec)</argsstring>
+        <name>doubleVectorToEigenVector</name>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <briefdescription>
+<para>Helper function to convert a Nx1 vector of doubles to an Eigen vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>vec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of doubles </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Eigen vector </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="126" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp" bodystart="1054" bodyend="1065"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>imu_simulator::ImuSimulatorNode</label>
+        <link refid="classimu__simulator_1_1_imu_simulator_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>rclcpp::Node</label>
+      </node>
+      <node id="1">
+        <label>imu_simulator::ImuSimulatorNode</label>
+        <link refid="classimu__simulator_1_1_imu_simulator_node"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" line="19" column="1" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h" bodystart="19" bodyend="127"/>
+    <listofallmembers>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a80869e26420ee1bdb7f387c047b18a7b" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>acceleration_timeout_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1ab7172f65be91c628ec5152901826b0bb" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>accelerationCallback</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aefc41e434a8c0d9e85b5e5bd049ed13b" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>accelerationTimeOutCallback</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aa294a68218f72654ff6b6a97897c80d2" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>calc_acc_from_odom_vel_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a21c7c9b909c3c958c135dfe77ccddddb" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>declareAndRetrieveEnableSettings</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a6bedd342dd8d329f4cc5a8a66c6b6f7c" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>declareAndRetrieveEnvironmentalSettings</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a0d93e0064aee1d71c6ce9eab2f87c97e" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>declareAndRetrieveGeneralSettings</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a670dc668d43d3bdaed605e564c2564a2" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>declareAndRetrieveImuParameters</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1ac52a0419d86b67692c5a29c7cd7dcec1" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>diagnosticMsg_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a372d9149e913ff903549611660246f7f" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>doubleVectorToEigenVector</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a17f6f0db3199a7d9571ba1b2ae1a71fa" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>first_acceleration_received_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aeebd3566678208f4e89725d788b27bfe" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>first_odometry_received_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1af9d3a7c747a08cd265307f8ddd22933d" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>firstLinearVelocityReceived_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a9614613392ca000e2af9d1602644c475" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>groundTruthAccelMsg_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a06fef78ffd359e32820ddeeb19e74e8e" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>groundTruthOdomMsg_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a862feb7cf0f05d44502ec861ddfa561b" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>imuSimulatorLoopCallback</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a32a4f2cc73ab193ec747d2eeb0367b57" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>ImuSimulatorNode</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1ac4493a8fe2a5e11a638d92a48d94ddb3" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>lastAccelTimestamp_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a0d524a35a1a3d2bdd77d7fa35a3fb27b" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>lastOdomTimestamp_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1ae237b4b8c2d3f0f6fb3bd2be2fbcbf8c" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>odometry_timeout_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a2b0a798fe84724d12e7f40aec8a503f8" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>odometryCallback</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a8b5255947a694665a27d6f3d48ab6797" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>odometryTimeOutCallback</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a6a52cab4703ce12f49888cca87d77193" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pAccelerationSubscriber_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1ae755a76cfefdaf16574305166a8ab8d8" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pAccelerationTimeOutTimer_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1ae9c6a907186fcf246415f31dd62f541e" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pDiagnosticPublisher_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a0990b9a07b1e9c9f10693709f0e762a2" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pImuAccelStampedPublisher_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a7e53ea908a26730aa7dba38f7bf0756e" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pImuPublisher_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a0415bf6086ba090f037b22cfdd09d747" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pImuSimulator_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aa9476b0c3966c4fa5bb239ea8aca1cee" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pOdometrySubscriber_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aebad1a55e0d4c2fce7b4ce5a2fb48961" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pOdometryTimeOutTimer_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a1ca92098dd4bf56c747f5f99e4af18ed" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pStaticTf2Broadcaster_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a08a74b22a47263769edc6ba691a79a9d" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pTimer_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a8fdeb972434d8f539e1edfece96cd797" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pTrueAccelerationPublisher_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1ad4632a6e2a8fd04955a2eba41d902627" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>pTrueAngularRatePublisher_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aae24354e9e00f9d5ce8ef79133624e64" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>publishTf2Transforms</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aa48fb3047bed97f3a9a6ceccf38fe6d1" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>sampleTime_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1af9dd9ba58784bef1f2d3ce906f302dd0" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>timeLastOdom_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1aac6bf27be73dabb8a7d6d85495c6fcdf" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>v_ib_b_prev_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_node_1a0be5f35c1c3b93ea9afc655c5f9a7ca2" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulatorNode</scope><name>~ImuSimulatorNode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

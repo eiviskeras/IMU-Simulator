@@ -1,0 +1,127 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="imu__simulator__structures_8h" kind="file" language="C++">
+    <compoundname>imu_simulator_structures.h</compoundname>
+    <includes local="no">Eigen/Dense</includes>
+    <includedby refid="imu__simulator_8h" local="yes">/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h</label>
+        <link refid="imu__simulator__structures_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Eigen/Dense</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h</label>
+        <link refid="imu__simulator__structures_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_node.h</label>
+        <link refid="imu__simulator__node_8h"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_static_csv.cpp</label>
+        <link refid="imu__simulator__static__csv_8cpp"/>
+      </node>
+      <node id="6">
+        <label>/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator_node.cpp</label>
+        <link refid="imu__simulator__node_8cpp"/>
+      </node>
+      <node id="3">
+        <label>/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp</label>
+        <link refid="imu__simulator_8cpp"/>
+      </node>
+      <node id="2">
+        <label>/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h</label>
+        <link refid="imu__simulator_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structimu__simulator_1_1_imu_stochastic_errors" prot="public">imu_simulator::ImuStochasticErrors</innerclass>
+    <innerclass refid="structimu__simulator_1_1_imu_sim_params" prot="public">imu_simulator::ImuSimParams</innerclass>
+    <innerclass refid="structimu__simulator_1_1_model_enable_settings" prot="public">imu_simulator::ModelEnableSettings</innerclass>
+    <innerclass refid="structimu__simulator_1_1_imu_model_enable_settings" prot="public">imu_simulator::ImuModelEnableSettings</innerclass>
+    <innerclass refid="structimu__simulator_1_1_environmental_parameters" prot="public">imu_simulator::EnvironmentalParameters</innerclass>
+    <innernamespace refid="namespaceimu__simulator">imu_simulator</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*@license<sp/>BSD-3<sp/>https://opensource.org/licenses/BSD-3-Clause</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">Copyright<sp/>(c)<sp/>2023,<sp/>Institute<sp/>of<sp/>Automatic<sp/>Control<sp/>-<sp/>RWTH<sp/>Aachen<sp/>University</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">Maximilian<sp/>Nitsch<sp/>(m.nitsch@irt.rwth-aachen.de)</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceimu__simulator" kindref="compound">imu_simulator</ref><sp/>{</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structimu__simulator_1_1_imu_stochastic_errors" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structimu__simulator_1_1_imu_stochastic_errors" kindref="compound">ImuStochasticErrors</ref><sp/>{</highlight></codeline>
+<codeline lineno="14" refid="structimu__simulator_1_1_imu_stochastic_errors_1ae7bd4df9799df331e160f3b3255b482c" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_stochastic_errors_1ae7bd4df9799df331e160f3b3255b482c" kindref="member">z_N</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Velocity/angular<sp/>random<sp/>walk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="structimu__simulator_1_1_imu_stochastic_errors_1acdab7a33d6089e3ac13e7922be9ba315" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_stochastic_errors_1acdab7a33d6089e3ac13e7922be9ba315" kindref="member">z_B</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Bias<sp/>instability</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="structimu__simulator_1_1_imu_stochastic_errors_1a80da580ca2a2b7dc1d5a5b0af986a067" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_stochastic_errors_1a80da580ca2a2b7dc1d5a5b0af986a067" kindref="member">z_K</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Accel./rate<sp/>random<sp/>walk</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="structimu__simulator_1_1_imu_sim_params" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref><sp/>{</highlight></codeline>
+<codeline lineno="20" refid="structimu__simulator_1_1_imu_sim_params_1a87df0666ae9615ebf7ef3e2429197eab" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1a87df0666ae9615ebf7ef3e2429197eab" kindref="member">N</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Vel./ang.<sp/>random<sp/>walk<sp/>(m/s^(3/2))/(rad/s^(1/2))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="structimu__simulator_1_1_imu_sim_params_1a42596ddb0e55648399a4ba96eb447a7f" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1a42596ddb0e55648399a4ba96eb447a7f" kindref="member">B</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Bias<sp/>instability<sp/>(m/s^2)/(rad/s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="structimu__simulator_1_1_imu_sim_params_1a98f024032ef2d7c9108501bd409d9a1d" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1a98f024032ef2d7c9108501bd409d9a1d" kindref="member">K</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Accel./rate<sp/>random<sp/>walk<sp/>(m/s^(5/2)))/(rad/s^(3/2)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="structimu__simulator_1_1_imu_sim_params_1afce6a4d132af40ce559eea2c7c021632" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1afce6a4d132af40ce559eea2c7c021632" kindref="member">corrTime</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Correlation<sp/>time<sp/>(s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="structimu__simulator_1_1_imu_sim_params_1ab9790b4f7bf3804bd5bb07a021f93eeb" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1ab9790b4f7bf3804bd5bb07a021f93eeb" kindref="member">intervalTurnOnBias</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Interval<sp/>turn-on<sp/>bias<sp/>(m/s^2)/(rad/s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="structimu__simulator_1_1_imu_sim_params_1ad0c727e7b995f61ae67b55aac084735b" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1ad0c727e7b995f61ae67b55aac084735b" kindref="member">measRange</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Measurement<sp/>range<sp/>(m/s^2)/(rad/s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="structimu__simulator_1_1_imu_sim_params_1a5d4458568373d00bd48bff0c70cdb58f" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1a5d4458568373d00bd48bff0c70cdb58f" kindref="member">intervalMisAlignment</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Interval<sp/>misalignment<sp/>(mrad)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>Eigen::Matrix&lt;double,<sp/>6,<sp/>1&gt;</highlight></codeline>
+<codeline lineno="28" refid="structimu__simulator_1_1_imu_sim_params_1a07a4341844b7ae27de7b02c2586f5034" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1a07a4341844b7ae27de7b02c2586f5034" kindref="member">intervalNonOrthogonality</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Interval<sp/>nonOrthogonality<sp/>(mrad)<sp/>//NOLINT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="structimu__simulator_1_1_imu_sim_params_1a4c160bcb033b932a32544a0179f82891" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1a4c160bcb033b932a32544a0179f82891" kindref="member">intervalScaleFactor</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Interval<sp/>scale<sp/>factor<sp/>(%)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structimu__simulator_1_1_imu_sim_params_1ae0d36b0c5fa483e2c140e4261c0aa021" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_imu_sim_params_1ae0d36b0c5fa483e2c140e4261c0aa021" kindref="member">resolution</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Measurement<sp/>resolution<sp/>(m/s^2/LSB)/(rad/s/LSB)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structimu__simulator_1_1_model_enable_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structimu__simulator_1_1_model_enable_settings" kindref="compound">ModelEnableSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="34" refid="structimu__simulator_1_1_model_enable_settings_1ab44f95d12e501ae85ef30cc0ae855f1c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structimu__simulator_1_1_model_enable_settings_1ab44f95d12e501ae85ef30cc0ae855f1c" kindref="member">enableLocalRefVec</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on/off<sp/>gravity<sp/>(acc)/<sp/>Earth<sp/>angular<sp/>vel.<sp/>(gyro)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structimu__simulator_1_1_model_enable_settings_1a2c04146d62ae76a310b0582ac1530ea5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structimu__simulator_1_1_model_enable_settings_1a2c04146d62ae76a310b0582ac1530ea5" kindref="member">enableTurnOnBias</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on/off<sp/>constant<sp/>turn-on<sp/>bias<sp/>given<sp/>an<sp/>interval</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structimu__simulator_1_1_model_enable_settings_1ab7fca567b51890d3738a32cceac1cd5f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structimu__simulator_1_1_model_enable_settings_1ab7fca567b51890d3738a32cceac1cd5f" kindref="member">enableScaling</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on/off<sp/>scaling</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structimu__simulator_1_1_model_enable_settings_1a0ae24e9e555fde2d6dda64646ea4e86b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structimu__simulator_1_1_model_enable_settings_1a0ae24e9e555fde2d6dda64646ea4e86b" kindref="member">enableMisAlignment</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>on/off<sp/>misalignment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structimu__simulator_1_1_model_enable_settings_1a214aa640096f7676bc3e432d4bfc6178" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structimu__simulator_1_1_model_enable_settings_1a214aa640096f7676bc3e432d4bfc6178" kindref="member">enableStochasticError</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>on/off<sp/>colored<sp/>noise<sp/>(stochastic<sp/>error)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structimu__simulator_1_1_model_enable_settings_1a5aca25d14a272f54016588fac09c724e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structimu__simulator_1_1_model_enable_settings_1a5aca25d14a272f54016588fac09c724e" kindref="member">enableSaturation</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on/off<sp/>saturation<sp/>given<sp/>a<sp/>measurement<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structimu__simulator_1_1_model_enable_settings_1a31e4f7e6b622d09c6878e47ba81f196d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structimu__simulator_1_1_model_enable_settings_1a31e4f7e6b622d09c6878e47ba81f196d" kindref="member">enableQuantization</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>on/off<sp/>quantization<sp/>given<sp/>a<sp/>resolution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structimu__simulator_1_1_imu_model_enable_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structimu__simulator_1_1_imu_model_enable_settings" kindref="compound">ImuModelEnableSettings</ref><sp/>{</highlight></codeline>
+<codeline lineno="44" refid="structimu__simulator_1_1_imu_model_enable_settings_1a50475c85840919a17f4160fc4d45b75b" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structimu__simulator_1_1_model_enable_settings" kindref="compound">ModelEnableSettings</ref><sp/><ref refid="structimu__simulator_1_1_imu_model_enable_settings_1a50475c85840919a17f4160fc4d45b75b" kindref="member">acc</ref>;</highlight></codeline>
+<codeline lineno="45" refid="structimu__simulator_1_1_imu_model_enable_settings_1ae2cd3a9cf4c36834319be9f21942555f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structimu__simulator_1_1_model_enable_settings" kindref="compound">ModelEnableSettings</ref><sp/><ref refid="structimu__simulator_1_1_imu_model_enable_settings_1ae2cd3a9cf4c36834319be9f21942555f" kindref="member">gyro</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="structimu__simulator_1_1_environmental_parameters" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structimu__simulator_1_1_environmental_parameters" kindref="compound">EnvironmentalParameters</ref><sp/>{</highlight></codeline>
+<codeline lineno="49" refid="structimu__simulator_1_1_environmental_parameters_1a6a22536c11f1d416ae9ddae622241c64" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_environmental_parameters_1a6a22536c11f1d416ae9ddae622241c64" kindref="member">g_n</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Local<sp/>gravity<sp/>vector<sp/>(m/s²)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structimu__simulator_1_1_environmental_parameters_1aaeec21c3cc0f7beb5348cb536fe16d08" refkind="member"><highlight class="normal"><sp/><sp/>Eigen::Vector3d<sp/><ref refid="structimu__simulator_1_1_environmental_parameters_1aaeec21c3cc0f7beb5348cb536fe16d08" kindref="member">w_ie_n</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Local<sp/>angular<sp/>velocity<sp/>of<sp/>Earth<sp/>(rad/s)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Identifier<sp/>for<sp/>measurement<sp/>axis<sp/>XYZ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="namespaceimu__simulator_1a631446e36eee7d573884f78bcbdbf652" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceimu__simulator_1a631446e36eee7d573884f78bcbdbf652" kindref="member">AxisIdentifier</ref><sp/>:<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>{<sp/><ref refid="namespaceimu__simulator_1a631446e36eee7d573884f78bcbdbf652ae90c2bb427415aee57804e9a269feb5b" kindref="member">axisX</ref><sp/>=<sp/>0,<sp/><ref refid="namespaceimu__simulator_1a631446e36eee7d573884f78bcbdbf652a14ded4622ea75955a80127059eda3984" kindref="member">axisY</ref><sp/>=<sp/>1,<sp/><ref refid="namespaceimu__simulator_1a631446e36eee7d573884f78bcbdbf652ac31a2de28fc62d4b039fcb85c220360a" kindref="member">axisZ</ref><sp/>=<sp/>2<sp/>};</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Identifier<sp/>for<sp/>measurement<sp/>type<sp/>(accelerometer<sp/>or<sp/>gyroscope)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42eea25ad19a5a52a90402c0664087a555ac0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref><sp/>{<sp/><ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42eea25ad19a5a52a90402c0664087a555ac0" kindref="member">acc</ref>,<sp/><ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42eea8ca2c6e6c1386204d2e1ff7e4b8c3c8a" kindref="member">gyro</ref><sp/>};</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}<sp/><sp/></highlight><highlight class="comment">//<sp/>namespace<sp/>imu_simulator</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structimu__simulator_1_1_imu_stochastic_errors" kind="struct" language="C++" prot="public">
+    <compoundname>imu_simulator::ImuStochasticErrors</compoundname>
+    <includes refid="imu__simulator__structures_8h" local="no">imu_simulator_structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_stochastic_errors_1ae7bd4df9799df331e160f3b3255b482c" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuStochasticErrors::z_N</definition>
+        <argsstring></argsstring>
+        <name>z_N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="14" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_stochastic_errors_1acdab7a33d6089e3ac13e7922be9ba315" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuStochasticErrors::z_B</definition>
+        <argsstring></argsstring>
+        <name>z_B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="15" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_stochastic_errors_1a80da580ca2a2b7dc1d5a5b0af986a067" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuStochasticErrors::z_K</definition>
+        <argsstring></argsstring>
+        <name>z_K</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="16" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="13" column="1" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structimu__simulator_1_1_imu_stochastic_errors_1acdab7a33d6089e3ac13e7922be9ba315" prot="public" virt="non-virtual"><scope>imu_simulator::ImuStochasticErrors</scope><name>z_B</name></member>
+      <member refid="structimu__simulator_1_1_imu_stochastic_errors_1a80da580ca2a2b7dc1d5a5b0af986a067" prot="public" virt="non-virtual"><scope>imu_simulator::ImuStochasticErrors</scope><name>z_K</name></member>
+      <member refid="structimu__simulator_1_1_imu_stochastic_errors_1ae7bd4df9799df331e160f3b3255b482c" prot="public" virt="non-virtual"><scope>imu_simulator::ImuStochasticErrors</scope><name>z_N</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

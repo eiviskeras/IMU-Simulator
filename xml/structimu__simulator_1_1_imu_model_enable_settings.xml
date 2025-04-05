@@ -1,0 +1,58 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structimu__simulator_1_1_imu_model_enable_settings" kind="struct" language="C++" prot="public">
+    <compoundname>imu_simulator::ImuModelEnableSettings</compoundname>
+    <includes refid="imu__simulator__structures_8h" local="no">imu_simulator_structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_model_enable_settings_1a50475c85840919a17f4160fc4d45b75b" prot="public" static="no" mutable="no">
+        <type><ref refid="structimu__simulator_1_1_model_enable_settings" kindref="compound">ModelEnableSettings</ref></type>
+        <definition>ModelEnableSettings imu_simulator::ImuModelEnableSettings::acc</definition>
+        <argsstring></argsstring>
+        <name>acc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="44" column="23" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_model_enable_settings_1ae2cd3a9cf4c36834319be9f21942555f" prot="public" static="no" mutable="no">
+        <type><ref refid="structimu__simulator_1_1_model_enable_settings" kindref="compound">ModelEnableSettings</ref></type>
+        <definition>ModelEnableSettings imu_simulator::ImuModelEnableSettings::gyro</definition>
+        <argsstring></argsstring>
+        <name>gyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="45" column="23" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>imu_simulator::ModelEnableSettings</label>
+        <link refid="structimu__simulator_1_1_model_enable_settings"/>
+      </node>
+      <node id="1">
+        <label>imu_simulator::ImuModelEnableSettings</label>
+        <link refid="structimu__simulator_1_1_imu_model_enable_settings"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>acc</edgelabel>
+          <edgelabel>gyro</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="43" column="1" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="43" bodyend="46"/>
+    <listofallmembers>
+      <member refid="structimu__simulator_1_1_imu_model_enable_settings_1a50475c85840919a17f4160fc4d45b75b" prot="public" virt="non-virtual"><scope>imu_simulator::ImuModelEnableSettings</scope><name>acc</name></member>
+      <member refid="structimu__simulator_1_1_imu_model_enable_settings_1ae2cd3a9cf4c36834319be9f21942555f" prot="public" virt="non-virtual"><scope>imu_simulator::ImuModelEnableSettings</scope><name>gyro</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

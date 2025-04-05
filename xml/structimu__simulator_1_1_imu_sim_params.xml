@@ -1,0 +1,156 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structimu__simulator_1_1_imu_sim_params" kind="struct" language="C++" prot="public">
+    <compoundname>imu_simulator::ImuSimParams</compoundname>
+    <includes refid="imu__simulator__structures_8h" local="no">imu_simulator_structures.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1a87df0666ae9615ebf7ef3e2429197eab" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::N</definition>
+        <argsstring></argsstring>
+        <name>N</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="20" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1a42596ddb0e55648399a4ba96eb447a7f" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::B</definition>
+        <argsstring></argsstring>
+        <name>B</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="21" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1a98f024032ef2d7c9108501bd409d9a1d" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::K</definition>
+        <argsstring></argsstring>
+        <name>K</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="22" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1afce6a4d132af40ce559eea2c7c021632" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::corrTime</definition>
+        <argsstring></argsstring>
+        <name>corrTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="23" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1ab9790b4f7bf3804bd5bb07a021f93eeb" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::intervalTurnOnBias</definition>
+        <argsstring></argsstring>
+        <name>intervalTurnOnBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="24" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1ad0c727e7b995f61ae67b55aac084735b" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::measRange</definition>
+        <argsstring></argsstring>
+        <name>measRange</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="25" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1a5d4458568373d00bd48bff0c70cdb58f" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::intervalMisAlignment</definition>
+        <argsstring></argsstring>
+        <name>intervalMisAlignment</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="26" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1a07a4341844b7ae27de7b02c2586f5034" prot="public" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; double, 6, 1 &gt;</type>
+        <definition>Eigen::Matrix&lt;double, 6, 1&gt; imu_simulator::ImuSimParams::intervalNonOrthogonality</definition>
+        <argsstring></argsstring>
+        <name>intervalNonOrthogonality</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="28" column="7" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1a4c160bcb033b932a32544a0179f82891" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::intervalScaleFactor</definition>
+        <argsstring></argsstring>
+        <name>intervalScaleFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="29" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structimu__simulator_1_1_imu_sim_params_1ae0d36b0c5fa483e2c140e4261c0aa021" prot="public" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimParams::resolution</definition>
+        <argsstring></argsstring>
+        <name>resolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="30" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" line="19" column="1" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator_structures.h" bodystart="19" bodyend="31"/>
+    <listofallmembers>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1a42596ddb0e55648399a4ba96eb447a7f" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>B</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1afce6a4d132af40ce559eea2c7c021632" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>corrTime</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1a5d4458568373d00bd48bff0c70cdb58f" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>intervalMisAlignment</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1a07a4341844b7ae27de7b02c2586f5034" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>intervalNonOrthogonality</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1a4c160bcb033b932a32544a0179f82891" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>intervalScaleFactor</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1ab9790b4f7bf3804bd5bb07a021f93eeb" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>intervalTurnOnBias</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1a98f024032ef2d7c9108501bd409d9a1d" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>K</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1ad0c727e7b995f61ae67b55aac084735b" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>measRange</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1a87df0666ae9615ebf7ef3e2429197eab" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>N</name></member>
+      <member refid="structimu__simulator_1_1_imu_sim_params_1ae0d36b0c5fa483e2c140e4261c0aa021" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimParams</scope><name>resolution</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

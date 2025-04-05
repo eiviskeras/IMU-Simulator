@@ -1,0 +1,2103 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="classimu__simulator_1_1_imu_simulator" kind="class" language="C++" prot="public">
+    <compoundname>imu_simulator::ImuSimulator</compoundname>
+    <includes refid="imu__simulator_8h" local="no">imu_simulator.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a10a4799336c5dc2e8fcbdec4aae49d9a" prot="private" static="no" mutable="no">
+        <type><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref></type>
+        <definition>ImuSimParams imu_simulator::ImuSimulator::accSimParams_</definition>
+        <argsstring></argsstring>
+        <name>accSimParams_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="93" column="16" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a907d54ddb87942efcaf7dc318ecccc24" prot="private" static="no" mutable="no">
+        <type><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref></type>
+        <definition>ImuSimParams imu_simulator::ImuSimulator::gyroSimParams_</definition>
+        <argsstring></argsstring>
+        <name>gyroSimParams_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="94" column="16" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a47a2b93cd9a9e3a48803fbabef8e0b7b" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structimu__simulator_1_1_imu_stochastic_errors" kindref="compound">ImuStochasticErrors</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ImuStochasticErrors&gt; imu_simulator::ImuSimulator::pAccStochasticErrors_</definition>
+        <argsstring></argsstring>
+        <name>pAccStochasticErrors_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="97" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a895ed89ea3200fb5efbc7930615549a2" prot="private" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="structimu__simulator_1_1_imu_stochastic_errors" kindref="compound">ImuStochasticErrors</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;ImuStochasticErrors&gt; imu_simulator::ImuSimulator::pGyroStochasticErrors_</definition>
+        <argsstring></argsstring>
+        <name>pGyroStochasticErrors_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="98" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1ae2b7595a25b2690495fa989f533d50fa" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::accConstTurnOnBias_</definition>
+        <argsstring></argsstring>
+        <name>accConstTurnOnBias_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="101" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1ab8257368bb94371dbe28175f7edd0e59" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::accConstScaleFactor_</definition>
+        <argsstring></argsstring>
+        <name>accConstScaleFactor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="102" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1ab6ca6bb3352d6dd35d406176bab27263" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; double, 6, 1 &gt;</type>
+        <definition>Eigen::Matrix&lt;double, 6, 1&gt; imu_simulator::ImuSimulator::accConstNonOrthogonality_</definition>
+        <argsstring></argsstring>
+        <name>accConstNonOrthogonality_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="103" column="17" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1aabc3e493225d016629e7d513104dcf67" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::accConstMisAlignment_</definition>
+        <argsstring></argsstring>
+        <name>accConstMisAlignment_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="104" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1ad0f34b595ce4f92e1d042f5cc92a8d5d" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::gyroConstTurnOnBias_</definition>
+        <argsstring></argsstring>
+        <name>gyroConstTurnOnBias_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="106" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a7095e9cd72a90668a47aa6f4e7858500" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::gyroConstScaleFactor_</definition>
+        <argsstring></argsstring>
+        <name>gyroConstScaleFactor_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="107" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="107" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1adab2a7c8326d9066e4cb0d258ef45ee9" prot="private" static="no" mutable="no">
+        <type>Eigen::Matrix&lt; double, 6, 1 &gt;</type>
+        <definition>Eigen::Matrix&lt;double, 6, 1&gt; imu_simulator::ImuSimulator::gyroConstNonOrthogonality_</definition>
+        <argsstring></argsstring>
+        <name>gyroConstNonOrthogonality_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="108" column="17" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a53c7af75e50957cf007d00c182982092" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::gyroConstMisAlignment_</definition>
+        <argsstring></argsstring>
+        <name>gyroConstMisAlignment_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="109" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a77b5f9f4ebd1dec598e6941059ab5ebd" prot="private" static="no" mutable="no">
+        <type><ref refid="structimu__simulator_1_1_imu_model_enable_settings" kindref="compound">ImuModelEnableSettings</ref></type>
+        <definition>ImuModelEnableSettings imu_simulator::ImuSimulator::imuModelEnableSettings_</definition>
+        <argsstring></argsstring>
+        <name>imuModelEnableSettings_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="112" column="26" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a95e5e56f73b83f9a4f4e5b029be04b87" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulator::constErrorsInitialized_</definition>
+        <argsstring></argsstring>
+        <name>constErrorsInitialized_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="115" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a52760350c79a939ab1225d3116b8a56f" prot="private" static="no" mutable="no">
+        <type><ref refid="structimu__simulator_1_1_environmental_parameters" kindref="compound">EnvironmentalParameters</ref></type>
+        <definition>EnvironmentalParameters imu_simulator::ImuSimulator::environmentalParameters_</definition>
+        <argsstring></argsstring>
+        <name>environmentalParameters_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="118" column="27" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a6767589882a045e6bd6d1f91ebbfd861" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::geoPositionLlh_</definition>
+        <argsstring></argsstring>
+        <name>geoPositionLlh_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="121" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1afce49a16b3bf25e0e472b6e103247baf" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::v_eb_n_</definition>
+        <argsstring></argsstring>
+        <name>v_eb_n_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="124" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1af063fb5880f67da1f2177571670f0fdf" prot="private" static="no" mutable="no">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::w_en_n_</definition>
+        <argsstring></argsstring>
+        <name>w_en_n_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="127" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1af710a0706d5aca8ada87b3d4950a7ebd" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double imu_simulator::ImuSimulator::dt_</definition>
+        <argsstring></argsstring>
+        <name>dt_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="130" column="10" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="130" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a622f42ec28341e6f3b8dbe06360e827d" prot="private" static="no" mutable="no">
+        <type>std::mt19937</type>
+        <definition>std::mt19937 imu_simulator::ImuSimulator::randomNumberGenerator_</definition>
+        <argsstring></argsstring>
+        <name>randomNumberGenerator_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="133" column="16" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1ab88f14bf13862bdfe7caa1f8bd050eb8" prot="private" static="no" mutable="no">
+        <type>std::normal_distribution</type>
+        <definition>std::normal_distribution imu_simulator::ImuSimulator::normalDistribution_</definition>
+        <argsstring></argsstring>
+        <name>normalDistribution_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="134" column="4" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a71a52ae5905bcc250c774f6338cf11f4" prot="private" static="no" mutable="no">
+        <type>std::uniform_real_distribution</type>
+        <definition>std::uniform_real_distribution imu_simulator::ImuSimulator::uniformDistribution_</definition>
+        <argsstring></argsstring>
+        <name>uniformDistribution_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="135" column="4" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classimu__simulator_1_1_imu_simulator_1a135b2e21377243dff66d764439b7be68" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool imu_simulator::ImuSimulator::useFixedRandomNumbers_</definition>
+        <argsstring></argsstring>
+        <name>useFixedRandomNumbers_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="138" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1ac7a97ea2123b0f39d1893c25249f278f" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imu_simulator::ImuSimulator::ImuSimulator</definition>
+        <argsstring>(ImuSimParams accSimParams=ImuSimParams(), ImuSimParams gyroSimParams=ImuSimParams(), ImuModelEnableSettings imuModelEnableSettings=ImuModelEnableSettings(), Eigen::Vector3d geoPositionLlh=Eigen::Vector3d::Zero(), Eigen::Vector3d v_eb_n=Eigen::Vector3d::Zero(), double dt=0.01, unsigned int seed=42)</argsstring>
+        <name>ImuSimulator</name>
+        <param>
+          <type><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref></type>
+          <declname>accSimParams</declname>
+          <defval><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref>()</defval>
+        </param>
+        <param>
+          <type><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref></type>
+          <declname>gyroSimParams</declname>
+          <defval><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref>()</defval>
+        </param>
+        <param>
+          <type><ref refid="structimu__simulator_1_1_imu_model_enable_settings" kindref="compound">ImuModelEnableSettings</ref></type>
+          <declname>imuModelEnableSettings</declname>
+          <defval><ref refid="structimu__simulator_1_1_imu_model_enable_settings" kindref="compound">ImuModelEnableSettings</ref>()</defval>
+        </param>
+        <param>
+          <type>Eigen::Vector3d</type>
+          <declname>geoPositionLlh</declname>
+          <defval>Eigen::Vector3d::Zero()</defval>
+        </param>
+        <param>
+          <type>Eigen::Vector3d</type>
+          <declname>v_eb_n</declname>
+          <defval>Eigen::Vector3d::Zero()</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>dt</declname>
+          <defval>0.01</defval>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>seed</declname>
+          <defval>42</defval>
+        </param>
+        <briefdescription>
+<para>Constructor of the <ref refid="classimu__simulator_1_1_imu_simulator" kindref="compound">ImuSimulator</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accSimParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IMU simulation parameters for the accelerometer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gyroSimParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IMU simulation parameters for the gyroscope. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>imuModelEnableSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IMU model enable settings. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>geoPositionLlh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Geodetic position of the IMU (latitude, longitude, height) (rad,rad,m). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_eb_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Geodetic velocity of the IMU (north, east, down) (m/s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dt</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Sampling time (s). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>seed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Random number generator seed. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="19" column="12" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="19" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1ad16decb457583891110ce9664818c045" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>imu_simulator::ImuSimulator::~ImuSimulator</definition>
+        <argsstring>()</argsstring>
+        <name>~ImuSimulator</name>
+        <briefdescription>
+<para>Destructor of the <ref refid="classimu__simulator_1_1_imu_simulator" kindref="compound">ImuSimulator</ref> class. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="28" column="3" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="58" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a16aaafc3d95f01d7c19573f49ecf8f44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::generateAccelerationMeasurement</definition>
+        <argsstring>(const Eigen::Vector3d &amp;a_ib_b_true, const Eigen::Quaterniond q_b_n_true)</argsstring>
+        <name>generateAccelerationMeasurement</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>a_ib_b_true</declname>
+        </param>
+        <param>
+          <type>const Eigen::Quaterniond</type>
+          <declname>q_b_n_true</declname>
+        </param>
+        <briefdescription>
+<para>Generates an erroneous accelerometer measurement vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function generates an erroneous accelerometer measurement vector. The measurement vector is generated by applying the following models:<itemizedlist>
+<listitem><para>gravity model,</para>
+</listitem><listitem><para>scale factor,</para>
+</listitem><listitem><para>misalignment model,</para>
+</listitem><listitem><para>constant turn-on bias model,</para>
+</listitem><listitem><para>stochastic error model,</para>
+</listitem><listitem><para>saturation model,</para>
+</listitem><listitem><para>quantization model.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a_ib_b_true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True acceleration of body frame with respect to inertial frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q_b_n_true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True quaternion of body frame with respect to navigation frame. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="31" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="656" bodyend="708"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a2cf5be68768eb1051b1a4a65aa4930ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::generateGyroscopeMeasurement</definition>
+        <argsstring>(const Eigen::Vector3d &amp;w_nb_b_true, const Eigen::Quaterniond q_b_n_true)</argsstring>
+        <name>generateGyroscopeMeasurement</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>w_nb_b_true</declname>
+        </param>
+        <param>
+          <type>const Eigen::Quaterniond</type>
+          <declname>q_b_n_true</declname>
+        </param>
+        <briefdescription>
+<para>Generates an erroneous gyroscope measurement vector. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function generates an erroneous gyroscope measurement vector. The measurement vector is generated by applying the following models:<itemizedlist>
+<listitem><para>Earth angular velocity model,</para>
+</listitem><listitem><para>scale factor,</para>
+</listitem><listitem><para>misalignment model,</para>
+</listitem><listitem><para>constant turn-on bias model,</para>
+</listitem><listitem><para>stochastic error model,</para>
+</listitem><listitem><para>saturation model,</para>
+</listitem><listitem><para>quantization model.</para>
+</listitem></itemizedlist>
+</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w_nb_b_true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True angular velocity of body frame with respect to navigation (NED) frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q_b_n_true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True quaternion of body frame with respect to navigation frame. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="33" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="726" bodyend="782"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a039ae415c00d79cc75593969fc3f39bf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::resetImuSimulator</definition>
+        <argsstring>()</argsstring>
+        <name>resetImuSimulator</name>
+        <briefdescription>
+<para>Reset the IMU simulator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="37" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1248" bodyend="1263"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a96dd3c5937db465de91b7b03496465d4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref></type>
+        <definition>ImuSimParams imu_simulator::ImuSimulator::getImuSimParams</definition>
+        <argsstring>(const MeasurementType &amp;measurementType) const</argsstring>
+        <name>getImuSimParams</name>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>measurementType</declname>
+        </param>
+        <briefdescription>
+<para>Getter for the IMU simulation parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>IMU simulation parameters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="40" column="16" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="67" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aed90a8be53b12204d64698fbaff5e9a4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimu__simulator_1_1_environmental_parameters" kindref="compound">EnvironmentalParameters</ref></type>
+        <definition>EnvironmentalParameters imu_simulator::ImuSimulator::getEnvironmentalParameters</definition>
+        <argsstring>() const</argsstring>
+        <name>getEnvironmentalParameters</name>
+        <briefdescription>
+<para>Getter for the environmental parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Environmental parameters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="41" column="27" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="85" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a0b0d7617305f29fa108e2a747b39ddf3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::getConstTurnOnBias</definition>
+        <argsstring>(const MeasurementType &amp;measurementType) const</argsstring>
+        <name>getConstTurnOnBias</name>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>measurementType</declname>
+        </param>
+        <briefdescription>
+<para>Getter for the constant turn-on bias. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constant turn-on bias. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="42" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="96" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a688edd794e516795a522d3df79ec8bd2" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structimu__simulator_1_1_imu_stochastic_errors" kindref="compound">ImuStochasticErrors</ref></type>
+        <definition>ImuStochasticErrors imu_simulator::ImuSimulator::getImuStochasticErrors</definition>
+        <argsstring>(const MeasurementType &amp;measurementType) const</argsstring>
+        <name>getImuStochasticErrors</name>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>measurementType</declname>
+        </param>
+        <briefdescription>
+<para>Getter for the IMU stochastic errors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>IMU stochastic errors. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="44" column="23" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="116" bodyend="127"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a763265d6190b7be5331c24b219d649f8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::getImuGeoPositionLlh</definition>
+        <argsstring>() const</argsstring>
+        <name>getImuGeoPositionLlh</name>
+        <briefdescription>
+<para>Getter for the geodetic position of the IMU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Last geodetic position of the IMU (latitude, longitude, height). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="46" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="134" bodyend="136"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a172183f2211a749944e8a5a2278bbd36" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::getImuGeoVelocity</definition>
+        <argsstring>() const</argsstring>
+        <name>getImuGeoVelocity</name>
+        <briefdescription>
+<para>Getter for the geodetic velocity of the IMU. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Last geodetic velocity of the IMU (north, east, down). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="47" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="143" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aff94b6b8f7bedf1f6ce91de4bc0367af" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::getConstScaleFactor</definition>
+        <argsstring>(const MeasurementType &amp;MeasurementType) const</argsstring>
+        <name>getConstScaleFactor</name>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>MeasurementType</declname>
+          <defname>measurementType</defname>
+        </param>
+        <briefdescription>
+<para>Getter for the constant scale factor error. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constant scale factor error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="48" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="154" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a4dbe68108f09a5e9fc78e1a064732401" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::getConstMisAlignment</definition>
+        <argsstring>(const MeasurementType &amp;MeasurementType) const</argsstring>
+        <name>getConstMisAlignment</name>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>MeasurementType</declname>
+          <defname>measurementType</defname>
+        </param>
+        <briefdescription>
+<para>Getter for the constant misalignment angles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constant misalignment angles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="50" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="174" bodyend="185"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aed7a69326c802ca2fb0fc15a624553da" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Matrix&lt; double, 6, 1 &gt;</type>
+        <definition>Eigen::Matrix&lt; double, 6, 1 &gt; imu_simulator::ImuSimulator::getConstNonOrthogonality</definition>
+        <argsstring>(const MeasurementType &amp;MeasurementType) const</argsstring>
+        <name>getConstNonOrthogonality</name>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>MeasurementType</declname>
+          <defname>measurementType</defname>
+        </param>
+        <briefdescription>
+<para>Getter for the constant orthogonality error angles. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Constant orthogonality error angles. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="52" column="17" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="194" bodyend="205"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a0c1e7b40d1cc469479320d899c977060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setImuSimParameters</definition>
+        <argsstring>(const ImuSimParams &amp;accSimParams, const ImuSimParams &amp;gyroSimParams)</argsstring>
+        <name>setImuSimParameters</name>
+        <param>
+          <type>const <ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref> &amp;</type>
+          <declname>accSimParams</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structimu__simulator_1_1_imu_sim_params" kindref="compound">ImuSimParams</ref> &amp;</type>
+          <declname>gyroSimParams</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the IMU simulation parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>accSimParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IMU simulation parameters for the accelerometer. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>gyroSimParams</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IMU simulation parameters for the gyroscope. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="56" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="213" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1abe778284db4258dbf259a934843d0fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setEnvironmentalParameters</definition>
+        <argsstring>(const EnvironmentalParameters &amp;environmentalParameters)</argsstring>
+        <name>setEnvironmentalParameters</name>
+        <param>
+          <type>const <ref refid="structimu__simulator_1_1_environmental_parameters" kindref="compound">EnvironmentalParameters</ref> &amp;</type>
+          <declname>environmentalParameters</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the environmental parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="58" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="374" bodyend="377"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a95a47808aa9e87a80650afc1ad7146b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setSimulatorSeed</definition>
+        <argsstring>(const int seed)</argsstring>
+        <name>setSimulatorSeed</name>
+        <param>
+          <type>const int</type>
+          <declname>seed</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the IMU seed of the random number generator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="61" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="382" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a0fbcd5fb36caf376aab19b7b2c4a67ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setImuSampleTime</definition>
+        <argsstring>(const double dt)</argsstring>
+        <name>setImuSampleTime</name>
+        <param>
+          <type>const double</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the IMU simulator sampling time. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="62" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="389" bodyend="391"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a8eaaefd4a278f6fbc4b1d3682e969c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setImuGeoPositionLlh</definition>
+        <argsstring>(const Eigen::Vector3d geoPositionLlh)</argsstring>
+        <name>setImuGeoPositionLlh</name>
+        <param>
+          <type>const Eigen::Vector3d</type>
+          <declname>geoPositionLlh</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the body frame (IMU) geodetic position (ECEF). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="64" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="396" bodyend="398"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a03058a20aa76ef9675f0645a89308731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setImuGeoVelocity</definition>
+        <argsstring>(const Eigen::Vector3d v_eb_n)</argsstring>
+        <name>setImuGeoVelocity</name>
+        <param>
+          <type>const Eigen::Vector3d</type>
+          <declname>v_eb_n</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the body frame (IMU) geodetic velocity (NED). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="65" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="403" bodyend="405"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1ab20bcd9c74d655b8457bf418b90cb0c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setImuEnableSettings</definition>
+        <argsstring>(const ImuModelEnableSettings &amp;imuModelEnableSettings)</argsstring>
+        <name>setImuEnableSettings</name>
+        <param>
+          <type>const <ref refid="structimu__simulator_1_1_imu_model_enable_settings" kindref="compound">ImuModelEnableSettings</ref> &amp;</type>
+          <declname>imuModelEnableSettings</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the whole IMU enable settings. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>imuModelEnableSettings</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>IMU model enable settings. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="67" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="412" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a731376934f5fdb3f424d8a10d61fdbe8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setAccEnableGravity</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setAccEnableGravity</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the accelerometer gravity model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable accelerometer gravity model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="70" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="422" bodyend="424"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a66337847c6a8db0daa3045d5eab08712" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setAccEnableTurnOnBias</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setAccEnableTurnOnBias</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the accelerometer turn-on bias model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable accelerometer turn-on bias model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="71" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="431" bodyend="433"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a7f7271db668951fbe5f608da01da9308" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setAccEnableScaling</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setAccEnableScaling</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the accelerometer scaling model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable accelerometer scaling model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="72" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="440" bodyend="442"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a770f0859a2118964da66626c8cb63632" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setAccEnableMisAlignment</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setAccEnableMisAlignment</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the accelerometer misalignment model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable accelerometer misalignment model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="73" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="449" bodyend="451"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a6ad5c1ca00356852fa376c1bd771e7b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setAccEnableStochasticError</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setAccEnableStochasticError</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the accelerometer stochastic error model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable accelerometer stochastic error model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="74" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="458" bodyend="460"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a53539582175eb9a5d57db596c3c93ee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setAccEnableSaturation</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setAccEnableSaturation</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the accelerometer saturation model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable accelerometer saturation model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="75" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="467" bodyend="469"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a5cca24a9a9bba92d6970467b153e90be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setAccEnableQuantization</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setAccEnableQuantization</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the accelerometer quantization model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable accelerometer quantization model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="76" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="476" bodyend="478"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a6f6b5880cccf69d1d133e9da200e495b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setGyroEnableEarthAngularVelocity</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setGyroEnableEarthAngularVelocity</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the gyroscope Earth angular velocity model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable gyroscope Earth angular velocity model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="78" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="485" bodyend="487"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1acc1a8c2b3ccb43c70393a2f1a31e975c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setGyroEnableTurnOnBias</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setGyroEnableTurnOnBias</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the gyroscope turn-on bias model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable gyroscope turn-on bias model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="79" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="494" bodyend="496"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aca5282578b361a5e0599b264cd51ef07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setGyroEnableScaling</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setGyroEnableScaling</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the gyroscope scaling model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable gyroscope scaling model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="80" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="503" bodyend="505"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1af74dec667541b7aab798b66f092c5534" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setGyroEnableMisAlignment</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setGyroEnableMisAlignment</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the gyroscope misalignment model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable gyroscope misalignment model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="81" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="512" bodyend="514"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a78e4cecee5b12b2aa764689af4abb4a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setGyroEnableStochasticError</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setGyroEnableStochasticError</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the gyroscope stochastic error model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable gyroscope stochastic error model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="82" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="521" bodyend="523"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a49c4cb149eda73ec856c57356e04671e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setGyroEnableSaturation</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setGyroEnableSaturation</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the gyroscope saturation model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable gyroscope saturation model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="83" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="530" bodyend="532"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a7bfde8457dbb543f69c7b7e83124dcfc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setGyroEnableQuantization</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setGyroEnableQuantization</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the gyroscope quantization model enable flag. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable gyroscope quantization model. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="84" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="539" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a3584486635f73ef48c7dc8d532daa9da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::setUseFixedRandomNumbersFlag</definition>
+        <argsstring>(const bool enable)</argsstring>
+        <name>setUseFixedRandomNumbersFlag</name>
+        <param>
+          <type>const bool</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+<para>Setter for the flag indicating if fixed random numbers are used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>enable</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Enable/disable fixed random numbers. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="86" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="548" bodyend="550"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a82c4673484fbb2020c5d365f9c69213e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::stringstream</type>
+        <definition>std::stringstream imu_simulator::ImuSimulator::printImuSimulatorParameters</definition>
+        <argsstring>()</argsstring>
+        <name>printImuSimulatorParameters</name>
+        <briefdescription>
+<para>Prints the IMU simulation parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String stream with the IMU simulation parameters. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="89" column="21" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="224" bodyend="369"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a482e4f5b12c4245ea08da21c77889552" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcAccelerometerGravityModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;a_ib_b, const Eigen::Quaterniond &amp;q_b_n_true)</argsstring>
+        <name>calcAccelerometerGravityModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>a_ib_b</declname>
+        </param>
+        <param>
+          <type>const Eigen::Quaterniond &amp;</type>
+          <declname>q_b_n_true</declname>
+        </param>
+        <briefdescription>
+<para>Gravity model for IMU acceleration measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An accelerometer measures the sum of the true acceleration of the body frame and the gravity vector (specific force). The true specific force is calculated by subtracting the gravity vector from the true acceleration.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>a_ib_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True acceleration of body frame with respect to inertial frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q_b_n_true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True quaternion of body frame with respect to navigation frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True specific force of body frame with respect to inertial frame. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="140" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1059" bodyend="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1ad9a4f5e16f65fc7880387d458e8a96b5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcGyroscopeEarthAngularVelocityModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;w_nb_b_true, const Eigen::Quaterniond &amp;q_b_n_true)</argsstring>
+        <name>calcGyroscopeEarthAngularVelocityModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>w_nb_b_true</declname>
+          <defname>w_nb_b</defname>
+        </param>
+        <param>
+          <type>const Eigen::Quaterniond &amp;</type>
+          <declname>q_b_n_true</declname>
+        </param>
+        <briefdescription>
+<para>Model for ideal gyroscope angular velocity measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>A gyroscope measures the true angular velocity of the body with respect to the inertial frame. Earth is rotating with an angular velocity, which needs to be added to the true angular velocity. The rotation of the navigation frame with respect to Earth also needs to be considered (transport angular velocity).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w_nb_b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True angular velocity of body frame with respect to NED frame. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>q_b_n_true</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>True quaternion of body frame with respect to navigation frame.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>True angular velocity of body frame with respect to inertial frame. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="143" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1082" bodyend="1092"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aecfd798cd5827b6f50f8e83d43cf1835" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcGravityVectorWelmec</definition>
+        <argsstring>(const Eigen::Vector3d &amp;geoPositionLlh)</argsstring>
+        <name>calcGravityVectorWelmec</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>geoPositionLlh</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the gravity vector in the navigation frame at a given latitude and height. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates the local gravity vector in the navigation (NED) frame using the European WELMEC gravity model at a given latitude and height. <simplesect kind="see"><para><ulink url="https://www.welmec.org/welmec/documents/guides/2/WELMEC_Guide_2_v2015.pdf">WELMEC Guide</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geoPositionLlh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Geodetic position (latitude, longitude, height) of body frame (IMU)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Local gravity vector in the navigation frame (m/s²). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="147" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1105" bodyend="1121"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aa43c3dc39f51e6cfe31677191c5508f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcAngularVelocityOfEarth</definition>
+        <argsstring>(const Eigen::Vector3d &amp;geoPositionLlh)</argsstring>
+        <name>calcAngularVelocityOfEarth</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>geoPositionLlh</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the angular velocity of Earth in the navigation frame at a given latitude. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates the angular velocity of Earth in the navigation (NED) frame at a given latitude. <simplesect kind="see"><para><ulink url="https://dl.acm.org/doi/10.5555/1594745">Aided Navigation - GPS with High Rate Sensors</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geoPositionLlh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Geodetic position (latitude, longitude, height) of body frame (IMU)</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Angular velocity vector of Earth in the navigation frame (rad/s). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="151" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1133" bodyend="1143"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aa15db473e0b86e6e1756560b92ed7410" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcTransportAngularVelocity</definition>
+        <argsstring>(const Eigen::Vector3d &amp;geoPositionLlh, const Eigen::Vector3d &amp;v_eb_n)</argsstring>
+        <name>calcTransportAngularVelocity</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>geoPositionLlh</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>v_eb_n</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the transport angular velocity in the navigation frame. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates the transport angular velocity in the navigation (NED) frame.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>geoPositionLlh</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Geodetic position (latitude, longitude, height) of body frame (IMU) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v_eb_n</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity of the body (b) frame with respect to the ECEF (e) frame (m/s).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Transport angular velocity vector in the navigation (NED) frame (rad/s). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="155" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1155" bodyend="1189"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a44a5880f8dfe99404bee94cbf8ee1333" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcConstTurnOnBiasModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;measurement, const MeasurementType &amp;measurementType)</argsstring>
+        <name>calcConstTurnOnBiasModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>measurement</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>measurementType</declname>
+        </param>
+        <briefdescription>
+<para>Turn-on bias (constant bias) model for IMU measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>An IMU shows a constant bias which changes every time the IMU is turned on. This function adds the constant turn-on bias to the measurement vector. The constant turn-on bias is drawn from a uniform distribution at class initialization.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of IMU measurements (acceleration or angular velocity). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Measurement vector with added constant turn-on bias. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="159" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="859" bodyend="882"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a0c8188f3e6a690e9e60ec8735f5db289" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcScaleFactorModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;measurement, const Eigen::Vector3d &amp;scaleFactor)</argsstring>
+        <name>calcScaleFactorModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>measurement</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>scaleFactor</declname>
+        </param>
+        <briefdescription>
+<para>Scaling error model for IMU measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Scaling errors result from imperfect calibration of the sensor&apos;s scaling factor. Since the sensor&apos;s onboard software already attempts to compensate for these errors, this function is meant to apply only to the uncompensated part.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of IMU measurements (acceleration or angular velocity). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scaleFactor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Scale factors in all three dimensions (%).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Measurement vector with scaling error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="163" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="796" bodyend="803"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a5b7255e59dcaaceefbc79dfabf986afb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcMisalignmentModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;measurement, const Eigen::Matrix&lt; double, 6, 1 &gt; &amp;nonOrthogonality, const Eigen::Vector3d &amp;misAlignment)</argsstring>
+        <name>calcMisalignmentModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>measurement</declname>
+        </param>
+        <param>
+          <type>const Eigen::Matrix&lt; double, 6, 1 &gt; &amp;</type>
+          <declname>nonOrthogonality</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>misAlignment</declname>
+        </param>
+        <briefdescription>
+<para>Misalignment and orthogonality error model for IMU measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The IMU&apos;s measurements are subject to two further types of errors: Non-orthogonality means that each of the axes can be tilted w.r.t. its perfect orthogonal position independently from other axes (in addition to misalignment). misalignment represents a rigid-body (orthogonal) rotational misplacement of The actual sensor axes with their locations marked on the sensor. This function applies all three of these errors to the measurement. Since the The sensor&apos;s onboard software already attempts to compensate for these errors; this function is meant to apply only to the uncompensated part.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of IMU measurements (acceleration or angular velocity). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nonOrthogonality</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Six angles between each pair of the axes (rad). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>misAlignment</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Three Euler angles representing the rigid-body rotation (rad).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Measurement vector with misalignment and orthogonality error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="167" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="823" bodyend="845"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aabdb5128f86c2b58a284edf603289e6e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcStochasticErrorModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;measurement, const MeasurementType &amp;measurementType)</argsstring>
+        <name>calcStochasticErrorModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>measurement</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a84e61dc51b8fae4525bbebee5a1b42ee" kindref="member">MeasurementType</ref> &amp;</type>
+          <declname>measurementType</declname>
+        </param>
+        <briefdescription>
+<para>Stochastic error model for IMU measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function adds the stochastic error to each axis of the measurement vector. The detailed implementation is in function calcDiscreteTimeEquivalentModel().</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of IMU measurements (acceleration or angular velocity). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>measurementType</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Measurement type (acceleration or angular velocity). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normDistNumbersMatrix</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Matrix of normal distributed random numbers.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Measurement vector with added stochastic error. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="173" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="896" bodyend="946"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a20343dc7fdfcffa9e493bb29c542dfec" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double imu_simulator::ImuSimulator::updateDiscreteTimeEquivalentStateSpaceModel</definition>
+        <argsstring>(std::shared_ptr&lt; ImuStochasticErrors &gt; pImuStochasticErrors, const double N, const double B, const double K, const double corrTime, const AxisIdentifier axisId)</argsstring>
+        <name>updateDiscreteTimeEquivalentStateSpaceModel</name>
+        <param>
+          <type>std::shared_ptr&lt; <ref refid="structimu__simulator_1_1_imu_stochastic_errors" kindref="compound">ImuStochasticErrors</ref> &gt;</type>
+          <declname>pImuStochasticErrors</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>N</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>K</declname>
+        </param>
+        <param>
+          <type>const double</type>
+          <declname>corrTime</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceimu__simulator_1a631446e36eee7d573884f78bcbdbf652" kindref="member">AxisIdentifier</ref></type>
+          <declname>axisId</declname>
+        </param>
+        <briefdescription>
+<para>Discrete-time equivalent (NBK) model of a Gauss-Markov process to model stochastic errors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function calculates the discrete-time equivalent (NBK) model using a first-order Gauss-Markov process. An IMU shows stochastic errors which sum up to colored noise, modeled as:<itemizedlist>
+<listitem><para>velocity/angle random walk (N),</para>
+</listitem><listitem><para>bias instability (B),</para>
+</listitem><listitem><para>acceleration/rate random walk (K). The internal Gauss-Markov state space model is updated with these parameters if this function is called. The model has internal states for time-correleated bias instability and acceleration/rate random walk. The white noise velocity/angle random walk is added at the end to the internal states. The output of the Gauss-Markov model is then the sum of all noise components which yields colored noise. The function returns the colored noise for one axis as double (scalar). <simplesect kind="see"><para><ulink url="https://ieeexplore.ieee.org/document/9955423">Inertial Measurement Unit Error Modeling Tutorial</ulink></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pImuStochasticErrors</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to struct of IMU stochastic error states. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>N</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Velocity/angle random walk. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Bias instability. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Accel./rate random walk. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>corrTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Correlation time of Gauss-Markov error model. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>normDistNumbers</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of normal distributed random numbers. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>axisId</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Axis identifier.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Sum of noise states (colored noise). </para>
+</simplesect>
+</para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="178" column="10" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="973" bodyend="1046"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1ab636e003c92d9e2c15471559dc64cee9" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcSaturationModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;measurement, const Eigen::Vector3d &amp;measRange)</argsstring>
+        <name>calcSaturationModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>measurement</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>measRange</declname>
+        </param>
+        <briefdescription>
+<para>Saturation model for IMU measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function saturates the measurement vector to the absolute values of the measRange vector. This replicates that an IMU can only measure values within a certain range.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of IMU measurements (acceleration or angular velocity). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>measRange</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of measurement ranges (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Saturated measurement vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="184" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1202" bodyend="1216"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1ab4f4d88416cb2e686e646f37c4fe9715" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Eigen::Vector3d</type>
+        <definition>Eigen::Vector3d imu_simulator::ImuSimulator::calcQuantizationModel</definition>
+        <argsstring>(const Eigen::Vector3d &amp;measurement, const Eigen::Vector3d &amp;resolution)</argsstring>
+        <name>calcQuantizationModel</name>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>measurement</declname>
+        </param>
+        <param>
+          <type>const Eigen::Vector3d &amp;</type>
+          <declname>resolution</declname>
+        </param>
+        <briefdescription>
+<para>Quantization model for IMU measurements. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function quantizes the measurement vector to the resolution of the resolution vector. This replicates that an IMU can only measure values with a certain resolution (Analog/Digital conversion).</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>measurement</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of IMU measurements (acceleration or angular velocity). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>resolution</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Vector of measurement resolutions (acceleration or angular velocity).</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Quantized measurement vector. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="188" column="19" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1229" bodyend="1243"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a2074552f61e1d880ae1cfdf7c5a577d8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void imu_simulator::ImuSimulator::initializeRandomConstantErrors</definition>
+        <argsstring>()</argsstring>
+        <name>initializeRandomConstantErrors</name>
+        <briefdescription>
+<para>Initializes the IMU constant errors. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function initializes the IMU constant errors by drawing random numbers from a uniform distribution. The following IMU constant errors are initialized:<itemizedlist>
+<listitem><para>constant turn-on bias,</para>
+</listitem><listitem><para>scale factor and misalignment. </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="192" column="8" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="560" bodyend="638"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1aeb3c5f8557700ae59884fe2ef74e71ad" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double imu_simulator::ImuSimulator::drawRandNormalDistNum</definition>
+        <argsstring>()</argsstring>
+        <name>drawRandNormalDistNum</name>
+        <briefdescription>
+<para>Draws a random number from a normal distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function draws a random number from a normal distribution with the given mean and standard deviation.</para>
+<para><simplesect kind="return"><para>Single random number from the normal distribution. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="195" column="10" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1272" bodyend="1275"/>
+      </memberdef>
+      <memberdef kind="function" id="classimu__simulator_1_1_imu_simulator_1a2ff2862624efecbb65e3d97ec99554bc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double imu_simulator::ImuSimulator::drawRandUniformDistNumFromInterval</definition>
+        <argsstring>(const double interval)</argsstring>
+        <name>drawRandUniformDistNumFromInterval</name>
+        <param>
+          <type>const double</type>
+          <declname>interval</declname>
+        </param>
+        <briefdescription>
+<para>Draws a random number from a uniform distribution. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function draws a random number from a uniform distribution in a given interval [-interval, +interval].</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>interval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Interval of the uniform distribution. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Single random number from the uniform distribution. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="196" column="10" bodyfile="/__w/IMU-Simulator/IMU-Simulator/src/imu_simulator.cpp" bodystart="1285" bodyend="1293"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" line="16" column="1" bodyfile="/__w/IMU-Simulator/IMU-Simulator/include/imu_simulator_package/imu_simulator.h" bodystart="16" bodyend="197"/>
+    <listofallmembers>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aabc3e493225d016629e7d513104dcf67" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>accConstMisAlignment_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ab6ca6bb3352d6dd35d406176bab27263" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>accConstNonOrthogonality_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ab8257368bb94371dbe28175f7edd0e59" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>accConstScaleFactor_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ae2b7595a25b2690495fa989f533d50fa" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>accConstTurnOnBias_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a10a4799336c5dc2e8fcbdec4aae49d9a" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>accSimParams_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a482e4f5b12c4245ea08da21c77889552" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcAccelerometerGravityModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aa43c3dc39f51e6cfe31677191c5508f0" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcAngularVelocityOfEarth</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a44a5880f8dfe99404bee94cbf8ee1333" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcConstTurnOnBiasModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aecfd798cd5827b6f50f8e83d43cf1835" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcGravityVectorWelmec</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ad9a4f5e16f65fc7880387d458e8a96b5" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcGyroscopeEarthAngularVelocityModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a5b7255e59dcaaceefbc79dfabf986afb" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcMisalignmentModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ab4f4d88416cb2e686e646f37c4fe9715" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcQuantizationModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ab636e003c92d9e2c15471559dc64cee9" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcSaturationModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a0c8188f3e6a690e9e60ec8735f5db289" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcScaleFactorModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aabdb5128f86c2b58a284edf603289e6e" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcStochasticErrorModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aa15db473e0b86e6e1756560b92ed7410" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>calcTransportAngularVelocity</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a95e5e56f73b83f9a4f4e5b029be04b87" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>constErrorsInitialized_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aeb3c5f8557700ae59884fe2ef74e71ad" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>drawRandNormalDistNum</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a2ff2862624efecbb65e3d97ec99554bc" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>drawRandUniformDistNumFromInterval</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1af710a0706d5aca8ada87b3d4950a7ebd" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>dt_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a52760350c79a939ab1225d3116b8a56f" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>environmentalParameters_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a16aaafc3d95f01d7c19573f49ecf8f44" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>generateAccelerationMeasurement</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a2cf5be68768eb1051b1a4a65aa4930ba" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>generateGyroscopeMeasurement</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a6767589882a045e6bd6d1f91ebbfd861" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>geoPositionLlh_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a4dbe68108f09a5e9fc78e1a064732401" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getConstMisAlignment</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aed7a69326c802ca2fb0fc15a624553da" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getConstNonOrthogonality</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aff94b6b8f7bedf1f6ce91de4bc0367af" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getConstScaleFactor</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a0b0d7617305f29fa108e2a747b39ddf3" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getConstTurnOnBias</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aed90a8be53b12204d64698fbaff5e9a4" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getEnvironmentalParameters</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a763265d6190b7be5331c24b219d649f8" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getImuGeoPositionLlh</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a172183f2211a749944e8a5a2278bbd36" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getImuGeoVelocity</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a96dd3c5937db465de91b7b03496465d4" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getImuSimParams</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a688edd794e516795a522d3df79ec8bd2" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>getImuStochasticErrors</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a53c7af75e50957cf007d00c182982092" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>gyroConstMisAlignment_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1adab2a7c8326d9066e4cb0d258ef45ee9" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>gyroConstNonOrthogonality_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a7095e9cd72a90668a47aa6f4e7858500" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>gyroConstScaleFactor_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ad0f34b595ce4f92e1d042f5cc92a8d5d" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>gyroConstTurnOnBias_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a907d54ddb87942efcaf7dc318ecccc24" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>gyroSimParams_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a77b5f9f4ebd1dec598e6941059ab5ebd" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>imuModelEnableSettings_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ac7a97ea2123b0f39d1893c25249f278f" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>ImuSimulator</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a2074552f61e1d880ae1cfdf7c5a577d8" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>initializeRandomConstantErrors</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ab88f14bf13862bdfe7caa1f8bd050eb8" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>normalDistribution_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a47a2b93cd9a9e3a48803fbabef8e0b7b" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>pAccStochasticErrors_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a895ed89ea3200fb5efbc7930615549a2" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>pGyroStochasticErrors_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a82c4673484fbb2020c5d365f9c69213e" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>printImuSimulatorParameters</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a622f42ec28341e6f3b8dbe06360e827d" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>randomNumberGenerator_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a039ae415c00d79cc75593969fc3f39bf" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>resetImuSimulator</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a731376934f5fdb3f424d8a10d61fdbe8" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setAccEnableGravity</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a770f0859a2118964da66626c8cb63632" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setAccEnableMisAlignment</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a5cca24a9a9bba92d6970467b153e90be" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setAccEnableQuantization</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a53539582175eb9a5d57db596c3c93ee8" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setAccEnableSaturation</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a7f7271db668951fbe5f608da01da9308" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setAccEnableScaling</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a6ad5c1ca00356852fa376c1bd771e7b0" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setAccEnableStochasticError</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a66337847c6a8db0daa3045d5eab08712" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setAccEnableTurnOnBias</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1abe778284db4258dbf259a934843d0fbe" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setEnvironmentalParameters</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a6f6b5880cccf69d1d133e9da200e495b" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setGyroEnableEarthAngularVelocity</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1af74dec667541b7aab798b66f092c5534" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setGyroEnableMisAlignment</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a7bfde8457dbb543f69c7b7e83124dcfc" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setGyroEnableQuantization</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a49c4cb149eda73ec856c57356e04671e" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setGyroEnableSaturation</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1aca5282578b361a5e0599b264cd51ef07" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setGyroEnableScaling</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a78e4cecee5b12b2aa764689af4abb4a7" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setGyroEnableStochasticError</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1acc1a8c2b3ccb43c70393a2f1a31e975c" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setGyroEnableTurnOnBias</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ab20bcd9c74d655b8457bf418b90cb0c5" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setImuEnableSettings</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a8eaaefd4a278f6fbc4b1d3682e969c28" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setImuGeoPositionLlh</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a03058a20aa76ef9675f0645a89308731" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setImuGeoVelocity</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a0fbcd5fb36caf376aab19b7b2c4a67ba" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setImuSampleTime</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a0c1e7b40d1cc469479320d899c977060" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setImuSimParameters</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a95a47808aa9e87a80650afc1ad7146b5" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setSimulatorSeed</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a3584486635f73ef48c7dc8d532daa9da" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>setUseFixedRandomNumbersFlag</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a71a52ae5905bcc250c774f6338cf11f4" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>uniformDistribution_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a20343dc7fdfcffa9e493bb29c542dfec" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>updateDiscreteTimeEquivalentStateSpaceModel</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1a135b2e21377243dff66d764439b7be68" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>useFixedRandomNumbers_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1afce49a16b3bf25e0e472b6e103247baf" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>v_eb_n_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1af063fb5880f67da1f2177571670f0fdf" prot="private" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>w_en_n_</name></member>
+      <member refid="classimu__simulator_1_1_imu_simulator_1ad16decb457583891110ce9664818c045" prot="public" virt="non-virtual"><scope>imu_simulator::ImuSimulator</scope><name>~ImuSimulator</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>/__w/IMU-Simulator/IMU-Simulator/src</compoundname>
+    <innerfile refid="ground__truth__test__publisher__node_8cpp">ground_truth_test_publisher_node.cpp</innerfile>
+    <innerfile refid="imu__simulator_8cpp">imu_simulator.cpp</innerfile>
+    <innerfile refid="imu__simulator__node_8cpp">imu_simulator_node.cpp</innerfile>
+    <innerfile refid="imu__simulator__static__csv_8cpp">imu_simulator_static_csv.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/__w/IMU-Simulator/IMU-Simulator/src/"/>
+  </compounddef>
+</doxygen>
