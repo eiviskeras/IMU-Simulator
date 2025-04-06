@@ -152,7 +152,7 @@ if(BUILD_TESTING)
     ament_cmake_uncrustify)
 
   # enforce linters and static code analyzers defined in ament_lint_common package
-  
+
   ament_lint_cmake(
     PATHS ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
     EXCLUDE
