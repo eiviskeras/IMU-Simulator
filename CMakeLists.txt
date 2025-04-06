@@ -118,7 +118,7 @@ install(DIRECTORY
         config
         DESTINATION
         share/${PROJECT_NAME}/)
-
+message(STATUS "CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   find_package(ament_cmake_lint_cmake REQUIRED)
@@ -162,7 +162,7 @@ if(BUILD_TESTING)
     ${CMAKE_SOURCE_DIR}/install
     ${CMAKE_SOURCE_DIR}/log
   )
-  message(STATUS "CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
+  
   ament_lint_cmake(
     PATHS ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
     EXCLUDE ${LINT_EXCLUDE}
