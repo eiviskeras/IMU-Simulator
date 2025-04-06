@@ -150,13 +150,11 @@ if(BUILD_TESTING)
   list(APPEND AMENT_LINT_AUTO_EXCLUDE
     ament_cmake_uncrustify)
 
-  # resolve build directory checks
-  set(AMENT_LINT_CMAKE_EXCLUDE
-  ${CMAKE_BINARY_DIR}
-  )
-
   # enforce linters and static code analyzers defined in ament_lint_common package
-  ament_lint_auto_find_test_dependencies()
+  ament_lint_cmake(
+    PATHS ${CMAKE_CURRENT_SOURCE_DIR}/cmake
+    EXCLUDE ${CMAKE_BINARY_DIR}
+  )
 
   # uncomment to include uncrustify explicitly
   # find_package(ament_cmake_uncrustify)
