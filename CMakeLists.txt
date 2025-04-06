@@ -121,6 +121,7 @@ install(DIRECTORY
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
+  find_package(ament_cmake_lint_cmake REQUIRED)
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
   set(ament_cmake_copyright_FOUND TRUE)
@@ -151,10 +152,16 @@ if(BUILD_TESTING)
   file(WRITE ${CMAKE_BINARY_DIR}/AMENT_IGNORE "")
 
   list(APPEND AMENT_LINT_AUTO_EXCLUDE
-    ament_cmake_uncrustify)
+    ament_cmake_uncrustify
+    ament_cmake_lint_cmake)
 
   # enforce linters and static code analyzers defined in ament_lint_common package
   ament_lint_auto_find_test_dependencies()
+
+  ament_lint_cmake(
+    PATHS ${CMAKE_CURRENT_SOURCE_DIR}
+    EXCLUDE ${CMAKE_BINARY_DIR}
+  )
 
   # uncomment to include uncrustify explicitly
   # find_package(ament_cmake_uncrustify)
