@@ -155,9 +155,16 @@ if(BUILD_TESTING)
   # enforce linters and static code analyzers defined in ament_lint_common package
   ament_lint_auto_find_test_dependencies()
 
+  set(LINT_EXCLUDE
+    ${CMAKE_BINARY_DIR}
+    ${CMAKE_BINARY_DIR}/*
+    ${CMAKE_SOURCE_DIR}/build
+    ${CMAKE_SOURCE_DIR}/install
+    ${CMAKE_SOURCE_DIR}/log
+  )
   ament_lint_cmake(
     PATHS ${CMAKE_CURRENT_SOURCE_DIR}
-    EXCLUDE ${CMAKE_BINARY_DIR}
+    EXCLUDE ${LINT_EXCLUDE}
   )
 
   # uncomment to include uncrustify explicitly
