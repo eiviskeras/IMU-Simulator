@@ -118,9 +118,9 @@ install(DIRECTORY
         config
         DESTINATION
         share/${PROJECT_NAME}/)
-message(STATUS "CMAKE_CURRENT_SOURCE_DIR = ${CMAKE_CURRENT_SOURCE_DIR}")
+
 if(BUILD_TESTING)
-  find_package(ament_lint_auto REQUIRED)
+  #find_package(ament_lint_auto REQUIRED)
   find_package(ament_cmake_lint_cmake REQUIRED)
   # the following line skips the linter which checks for copyrights
   # comment the line when a copyright and license is added to all source files
@@ -149,29 +149,44 @@ if(BUILD_TESTING)
   set(ament_cmake_cpplint_FOUND TRUE)
 
   list(APPEND AMENT_LINT_AUTO_EXCLUDE
-    ament_cmake_uncrustify
-    ament_cmake_lint_cmake)
+    ament_cmake_uncrustify)
 
   # enforce linters and static code analyzers defined in ament_lint_common package
-  ament_lint_auto_find_test_dependencies()
-
-  set(LINT_EXCLUDE
-    ${CMAKE_BINARY_DIR}
-    ${CMAKE_BINARY_DIR}/*
-    ${CMAKE_SOURCE_DIR}/build
-    ${CMAKE_SOURCE_DIR}/install
-    ${CMAKE_SOURCE_DIR}/log
-  )
   
   ament_lint_cmake(
     PATHS ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
-    EXCLUDE ${LINT_EXCLUDE}
+    EXCLUDE
+      ${CMAKE_BINARY_DIR}
+      ${CMAKE_SOURCE_DIR}/build
+      ${CMAKE_SOURCE_DIR}/install
+      ${CMAKE_SOURCE_DIR}/log
   )
+
+  find_package(ament_cmake_cppcheck REQUIRED)
+  ament_cppcheck(
+    INCLUDE_DIRS
+      "${CMAKE_CURRENT_SOURCE_DIR}/include"
+  )
+
+  find_package(ament_cmake_flake8 REQUIRED)
+  ament_flake8()
+
+  find_package(ament_cmake_pep257 REQUIRED)
+  ament_pep257()
+
+  find_package(ament_cmake_xmllint REQUIRED)
+  ament_xmllint()
 
   # uncomment to include uncrustify explicitly
   # find_package(ament_cmake_uncrustify)
   # ament_uncrustify(CONFIG_FILE "./uncrustify.cfg" TESTNAME "custom_uncrustify")
 
 endif()
+set(ament_cmake_cppcheck_FOUND TRUE)
+set(ament_cmake_cpplint_FOUND TRUE)
+set(ament_cmake_lint_cmake_FOUND TRUE)
+set(ament_cmake_flake8_FOUND TRUE)
+set(ament_cmake_pep257_FOUND TRUE)
+set(ament_cmake_xmllint_FOUND TRUE)
 
 ament_package()
