@@ -148,9 +148,6 @@ if(BUILD_TESTING)
   # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
 
-  # ignore build directory
-  file(WRITE ${CMAKE_BINARY_DIR}/AMENT_IGNORE "")
-
   list(APPEND AMENT_LINT_AUTO_EXCLUDE
     ament_cmake_uncrustify
     ament_cmake_lint_cmake)
