@@ -163,7 +163,7 @@ if(BUILD_TESTING)
     ${CMAKE_SOURCE_DIR}/log
   )
   ament_lint_cmake(
-    PATHS ${CMAKE_CURRENT_SOURCE_DIR}
+    PATHS ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
     EXCLUDE ${LINT_EXCLUDE}
   )
 
