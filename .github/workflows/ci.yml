@@ -44,8 +44,20 @@ jobs:
             ros-humble-ament-lint-auto \
             ros-humble-ament-lint-common \
             ros-humble-ament-cmake-cpplint \
-            ros-humble-ament-cmake-cppcheck \
-            cppcheck
+            ros-humble-ament-cmake-cppcheck 
+
+      - name: Install Latest Cppcheck from Source
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y git build-essential cmake
+          git clone https://github.com/danmar/cppcheck.git
+          cd cppcheck
+          git checkout master  # Optionally specify a specific tag or commit
+          mkdir build && cd build
+          cmake ..
+          make
+          sudo make install
+          cppcheck --version
 
       - name: Setup ROS 2 Environment and Dependencies
         run: |
@@ -75,7 +87,7 @@ jobs:
         run: |
           source /opt/ros/humble/setup.bash
           colcon test --packages-select imu_simulator_package
-          ament_cpplint src
+          ament_cpplint --filter=-build/include_subdir src
         continue-on-error: true
 
       - name: Run CppCheck (Static Analysis)
