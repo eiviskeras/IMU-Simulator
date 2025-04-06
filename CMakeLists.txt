@@ -147,19 +147,14 @@ if(BUILD_TESTING)
   # a copyright and license is added to all source files
   set(ament_cmake_cpplint_FOUND TRUE)
 
+  # ignore build directory
+  file(WRITE ${CMAKE_BINARY_DIR}/AMENT_IGNORE "")
+
   list(APPEND AMENT_LINT_AUTO_EXCLUDE
-    ament_cmake_uncrustify ament_cmake_lint_cmake)
+    ament_cmake_uncrustify)
 
   # enforce linters and static code analyzers defined in ament_lint_common package
   ament_lint_auto_find_test_dependencies()
-
-  ament_lint_cmake(
-    PATHS
-      ${CMAKE_CURRENT_SOURCE_DIR}/CMakeLists.txt
-    EXCLUDE
-      ${CMAKE_BINARY_DIR}                      # excludes build/
-      ${CMAKE_CURRENT_BINARY_DIR}              # safety for subdirs
-  )
 
   # uncomment to include uncrustify explicitly
   # find_package(ament_cmake_uncrustify)
